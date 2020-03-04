@@ -1,9 +1,13 @@
+number = input("Pick a number!  ")
 name = input("What is your name?  ")
-number = inputer("What is the number?  ")
 
 #pass the number into an int
 
 number = int(number)
+
+#saying
+
+print("hey {}!\nThe number {}...".format(name, number))
 
 #pass into variable
 
@@ -23,3 +27,5 @@ elif is_buzz:
   
 else:
   print("is neither a fizz or buzz number")
+
+input()
