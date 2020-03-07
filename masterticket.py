@@ -1,8 +1,11 @@
 TICKET_PRICE = 10
-
+SERVICE_CHARGE = 2
 tickets_remaining = 100  
 
+#create calculate_price function
 
+def calculate_price(number_of_tickets):
+  return no_tickets * TICKET_PRICE + SERVICE_CHARGE
 
 while tickets_remaining >= 1:
 
@@ -19,8 +22,8 @@ while tickets_remaining >= 1:
       #error text
       print("dumbass, only numbers allowed. {}".format(err))
     else:
-      total_cost = no_tickets * TICKET_PRICE
-      print("the total cost of your order is ${}.".format(total_cost))
+      total_cost = calculate_price(no_tickets)
+      print("the total cost of your order is ${}. This includes the service charge of $2".format(total_cost))
       confirm_purchase = input("Would you like to proceed {}? (Yes or No)   ".format(user_name))
       confirm_purchase = confirm_purchase.lower()
       if confirm_purchase == "yes":
