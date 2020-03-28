@@ -1,11 +1,11 @@
 # Learning
 
-### Wine Web Scraper
+## Wine Web Scraper
 I wanted to continue to learn how to best use beautiful soup to scrape the web to get details from a list or a number of results. While it is still really basic, this script scrapes the page from our wine club and presents the first page of results then prints them to a CSV file.
 
 ## What I learned from this project
 
-# Taking the results and striping the meta tags
+### Taking the results and striping the meta tags
 
 I was having a lot of trouble when it came to striping away the tags initially. I was driving me up the wall. I put the computer down and walked away. In the end I found that I could use
 ```
@@ -13,7 +13,7 @@ list_bottles = [wine.get_text(strip = True) for wine in soup.find_all('div',{'cl
 ```
 I found a thread on stack overflow that was essentially showed me how I could achieve removing the tags from the list while at the same time passing it into my list. I was originally printing the content to the console because as I progress through Treehouse that is where all of the content is being taught. But I really wanted to step it up and move on to actually accomplishing something.
 
-# Creating a CSV file
+### Creating a CSV file
 
 So the next step was to scrape content from the web and then pass that to a CSV file. I am still not fully across the use of the CSV module in Python but for the interim, I was able to take the list that I downloaded and write that to a CSV file. My initial challenge was that it was writing all the content to a single row. I wanted the list in a column. I solved that issue by adding the for loop in the csv module.
 
@@ -30,5 +30,5 @@ with open('wine_list.csv', 'w', newline='') as myfile:
 
 So by adding newline to the with statement I was able to print the list to csv file and all in one column.
 
-# Final Thoughts
+### Final Thoughts
 This was a fun little project, building on the skills I picked up the other day scraping the web for a share price. Little projects like this are helping to see what a useful language Python is.
