@@ -1,4 +1,4 @@
-<a href="https://docs.python-guide.org/writing/structure/">Structuring Your Project</a>
+- [Structuring Your Project ](https://docs.python-guide.org/writing/structure/)
 - [Interview Cake](https://www.interviewcake.com/upgrade)
 - [Selenium Webdriver Tutorial](https://www.guru99.com/selenium-python.html)
 - [Teach yourself CS](https://teachyourselfcs.com/?utm_source=share&utm_medium=ios_app&utm_name=iossmf#programming)
